@@ -1,0 +1,805 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Victor Lefebvre Brito De Oliveira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout : brochure de candidature "voyage d'affaires" — hero clair avec carte d'embarquement du stage et trajectoire d'avion,
+   sections aérées sur fond chaud, bleu pétrole pour la structure, ambre pour l'action. */
+:root{
+  --bg:#F8F6F1; --bg-2:#EFEBE2; --surface:#FFFFFF; --ink:#16252E; --muted:#5C6870; --line:#E2DDD2;
+  --brand:#0E5E6F; --brand-2:#0A4654; --amber:#F2A541; --amber-ink:#2B1D06; --rose:#E07A5F; --soft:#E5F0F1;
+  --display:"DM Serif Display", Georgia, "Times New Roman", serif;
+  --body:"Manrope","Segoe UI",system-ui,sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --shadow:0 24px 60px -28px rgba(22,37,46,.35);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#101A1F; --bg-2:#15222A; --surface:#1A2830; --ink:#EEF2F0; --muted:#A3B0B4; --line:#2A3A42;
+  --brand:#5FB6C4; --brand-2:#0A4654; --soft:#163039; --shadow:0 24px 60px -28px rgba(0,0,0,.7); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101A1F; --bg-2:#15222A; --surface:#1A2830; --ink:#EEF2F0; --muted:#A3B0B4; --line:#2A3A42;
+  --brand:#5FB6C4; --brand-2:#0A4654; --soft:#163039; --shadow:0 24px 60px -28px rgba(0,0,0,.7); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.7 var(--body);margin:0}
+.gut{padding-inline:20px}
+.wrap{max-width:70rem;margin:0 auto}
+a{color:var(--brand)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:6px}
+.eyebrow{font:700 .74rem var(--body);text-transform:uppercase;letter-spacing:.16em;color:var(--brand)}
+h1,h2,h3{text-wrap:balance}
+h2{font:400 clamp(2.1rem,4.8vw,3.4rem)/1.08 var(--display);letter-spacing:-.01em;margin:0}
+h2 em{font-style:italic;color:var(--brand)}
+
+/* progression + nav */
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(var(--p,0));background:linear-gradient(90deg,var(--brand),var(--amber));z-index:60}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-block:.85rem;flex-wrap:wrap}
+.logo{font:400 1.35rem var(--display);color:var(--ink);text-decoration:none}
+.logo b{color:var(--amber);font-weight:400}
+nav .links{display:flex;gap:1.4rem;flex-wrap:wrap;font:600 .88rem var(--body)}
+nav .links a{color:var(--muted);text-decoration:none;position:relative}
+nav .links a::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:100%;background:var(--amber);transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease)}
+nav .links a:hover{color:var(--ink)}
+nav .links a:hover::after{transform:scaleX(1);transform-origin:left}
+
+/* hero */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:
+  radial-gradient(60rem 30rem at 85% -10%,color-mix(in srgb,var(--amber) 28%,transparent),transparent 60%),
+  radial-gradient(50rem 30rem at -10% 110%,color-mix(in srgb,var(--brand) 18%,transparent),transparent 60%),var(--bg)}
+.sky{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.sky svg{width:100%;height:100%}
+.cloud{animation:cloud 40s linear infinite}
+.cloud.c2{animation-duration:60s;animation-delay:-20s}
+@keyframes cloud{from{transform:translateX(-20%)}to{transform:translateX(120%)}}
+.hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:3.5rem;align-items:center;padding-block:4.5rem 5rem}
+.status{display:inline-flex;align-items:center;gap:.6rem;font:700 .85rem var(--body);color:var(--brand-2);padding:.45rem 1rem;border-radius:999px;background:var(--surface);border:1px solid var(--line);box-shadow:0 6px 20px -12px rgba(22,37,46,.3)}
+:root[data-theme="dark"] .status{color:var(--ink)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .status{color:var(--ink)}}
+.dot{width:.55rem;height:.55rem;border-radius:50%;background:#2BB673;position:relative;flex:none}
+.dot::after{content:"";position:absolute;inset:0;border-radius:50%;background:#2BB673;animation:ping 1.8s var(--ease) infinite}
+@keyframes ping{to{transform:scale(3);opacity:0}}
+h1{font:400 clamp(2.8rem,7vw,5.2rem)/1 var(--display);margin:1.4rem 0 1.1rem;letter-spacing:-.015em}
+h1 .line{display:block;overflow:hidden;padding-bottom:.08em}
+h1 .line>span{display:inline-block;animation:rise 1s var(--ease) both}
+h1 .line:nth-child(2)>span{animation-delay:.12s}
+h1 .line:nth-child(3)>span{animation-delay:.24s}
+@keyframes rise{from{transform:translateY(105%)}}
+h1 em{font-style:italic;color:var(--brand)}
+.role{font:600 clamp(1.05rem,2.2vw,1.3rem)/1.4 var(--body);min-height:1.9em}
+.role .typed{color:var(--brand);border-bottom:3px solid var(--amber)}
+.caret{display:inline-block;width:2px;height:1.1em;background:var(--ink);vertical-align:-.15em;margin-left:3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.lede{color:var(--muted);max-width:36rem;margin:.8rem 0 0;font-size:1.12rem}
+.lede strong{color:var(--ink);font-weight:700}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2rem}
+.btn{font:700 1rem var(--body);padding:.9rem 1.5rem;border-radius:999px;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s;border:0;cursor:pointer}
+.btn.primary{background:var(--brand-2);color:#fff;box-shadow:0 14px 30px -14px rgba(10,70,84,.8)}
+.btn.primary:hover{transform:translateY(-2px)}
+.btn.amber{background:var(--amber);color:var(--amber-ink)}
+.btn.amber:hover{transform:translateY(-2px)}
+.btn.ghost{color:var(--ink);border:1.5px solid var(--line);background:var(--surface)}
+.btn.ghost:hover{border-color:var(--ink)}
+.btn .arr{transition:transform .3s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+
+/* carte d'embarquement */
+.pass{position:relative;background:var(--surface);border-radius:26px;box-shadow:var(--shadow);overflow:hidden;animation:passIn 1.1s .3s var(--ease) both;transition:transform .25s ease-out;min-width:0}
+@keyframes passIn{from{opacity:0;transform:translateY(40px) rotate(3deg)}}
+.pass-top{background:linear-gradient(120deg,var(--brand-2),#13788A);color:#fff;padding:1.3rem 1.6rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.pass-top b{font:800 .8rem var(--body);letter-spacing:.16em;text-transform:uppercase}
+.pass-top span{font:400 1.05rem var(--display);opacity:.9}
+.pass-route{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:.8rem;padding:1.6rem 1.6rem .4rem}
+.pass-route .city{display:grid;gap:.1rem;min-width:0}
+.pass-route .city:last-child{text-align:right}
+.pass-route small{font:700 .68rem var(--body);text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+.pass-route strong{font:400 2.1rem/1 var(--display)}
+.pass-route .city span{font-size:.85rem;color:var(--muted)}
+.plane-line{position:relative;width:5.5rem;height:2rem}
+.plane-line::before{content:"";position:absolute;left:0;right:0;top:50%;border-top:2px dashed var(--line)}
+.plane-line svg{position:absolute;top:50%;left:0;width:1.6rem;height:1.6rem;margin-top:-.8rem;color:var(--amber);animation:fly 3.2s ease-in-out infinite}
+@keyframes fly{0%{left:0;opacity:0}15%{opacity:1}85%{opacity:1}100%{left:calc(100% - 1.6rem);opacity:0}}
+.pass-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem 1.2rem;padding:1.2rem 1.6rem 1.4rem}
+.pass-grid div{display:grid;gap:.1rem;min-width:0}
+.pass-grid small{font:700 .66rem var(--body);text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+.pass-grid b{font-weight:700;font-size:.98rem;line-height:1.35}
+.pass-grid .hl{color:var(--brand)}
+.pass-stub{position:relative;border-top:2px dashed var(--line);padding:1rem 1.6rem 1.2rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.pass-stub::before,.pass-stub::after{content:"";position:absolute;top:-13px;width:24px;height:24px;border-radius:50%;background:var(--bg)}
+.pass-stub::before{left:-12px}.pass-stub::after{right:-12px}
+.barcode{height:2.4rem;flex:1;min-width:8rem;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 4px,var(--ink) 4px 5px,transparent 5px 8px,var(--ink) 8px 11px,transparent 11px 13px);opacity:.85;border-radius:2px}
+.gate{font:800 .8rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--brand)}
+
+/* bandeau valeurs */
+.band{background:var(--brand-2);color:#fff;overflow:hidden}
+.track{display:flex;width:max-content;animation:scroll 45s linear infinite;padding-block:1.05rem}
+.track span{font:400 1.35rem var(--display);white-space:nowrap;display:inline-flex;align-items:center;gap:2.2rem;padding-right:2.2rem}
+.track span::after{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--amber)}
+.track span:nth-child(even){font-style:italic;opacity:.85}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding-block:6.5rem 0}
+.head{display:grid;gap:.9rem;max-width:46rem;margin-bottom:3rem}
+.head p{margin:0;color:var(--muted);font-size:1.12rem}
+@supports (animation-timeline: view()){
+  .reveal{animation:reveal linear both;animation-timeline:view();animation-range:entry 0% entry 40%}
+  @keyframes reveal{from{opacity:.15;transform:translateY(40px)}}
+}
+
+/* stage */
+.journey{position:relative;background:var(--surface);border-radius:30px;padding:2.2rem;box-shadow:var(--shadow);overflow:hidden}
+.journey-svg{width:100%;height:auto;display:block;margin-bottom:1.4rem;overflow:visible}
+.trail{stroke-dasharray:6 8;animation:trail 1.6s linear infinite}
+@keyframes trail{to{stroke-dashoffset:-28}}
+.legs{display:grid;grid-template-columns:2fr 5fr;gap:1rem}
+.leg{border-radius:20px;padding:1.4rem 1.5rem;display:grid;gap:.35rem;min-width:0}
+.leg.l1{background:var(--soft)}
+.leg.l2{background:color-mix(in srgb,var(--amber) 22%,var(--surface))}
+.leg small{font:700 .7rem var(--body);text-transform:uppercase;letter-spacing:.14em;color:var(--brand)}
+.leg b{font:400 1.6rem/1.1 var(--display)}
+.leg p{margin:0;color:var(--muted);font-size:.98rem;line-height:1.5}
+.missions{display:grid;grid-template-columns:1fr 1.35fr;gap:1.25rem;margin-top:1.25rem}
+.mission{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:2rem;min-width:0}
+.mission h3{font:400 1.75rem/1.15 var(--display);margin:.5rem 0 .6rem}
+.mission p{margin:0;color:var(--muted)}
+.steps6{display:grid;grid-template-columns:repeat(3,1fr);gap:.55rem;margin-top:1.3rem;counter-reset:s}
+.steps6 span{counter-increment:s;font:600 .88rem var(--body);padding:.6rem .8rem;border-radius:14px;background:var(--bg);display:flex;align-items:center;gap:.55rem}
+.steps6 span::before{content:counter(s);flex:none;display:grid;place-items:center;width:1.6rem;height:1.6rem;border-radius:50%;background:var(--brand-2);color:#fff;font-size:.78rem;font-weight:800}
+.sub-h{font:400 1.7rem var(--display);margin:3.2rem 0 1.2rem}
+.domains{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.dom{position:relative;display:grid;gap:.35rem;padding:1.4rem 1.4rem 1.4rem 4.4rem;border-radius:20px;background:var(--surface);border:1px solid var(--line);transition:transform .35s var(--ease),box-shadow .35s;min-width:0}
+.dom:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.dom .di{position:absolute;left:1.2rem;top:1.35rem;width:2.4rem;height:2.4rem;border-radius:12px;display:grid;place-items:center;background:var(--soft);color:var(--brand)}
+.dom .di svg{width:1.25rem;height:1.25rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.dom b{font-weight:800;font-size:1.02rem}
+.dom span{color:var(--muted);font-size:.94rem;line-height:1.45}
+.dom.hot{background:color-mix(in srgb,var(--amber) 20%,var(--surface));border-color:color-mix(in srgb,var(--amber) 60%,var(--line))}
+.dom.hot .di{background:var(--amber);color:var(--amber-ink)}
+.admin{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2.8rem;padding:1.8rem 0 0;border-top:1px solid var(--line)}
+.admin p{margin:.4rem 0 0;font-size:.97rem;line-height:1.5;color:var(--muted)}
+.also{margin-top:2.8rem;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between;padding:2rem 2.2rem;border-radius:26px;background:linear-gradient(120deg,var(--brand-2),#13788A);color:#fff;position:relative;overflow:hidden}
+.also::after{content:"";position:absolute;right:-4rem;top:-4rem;width:14rem;height:14rem;border-radius:50%;background:var(--amber);opacity:.25;filter:blur(30px);animation:float 10s ease-in-out infinite alternate}
+@keyframes float{to{transform:translate(-2rem,2rem) scale(1.15)}}
+.also .eyebrow{color:var(--amber)}
+.also h3{font:400 1.8rem var(--display);margin:.3rem 0 .4rem}
+.also p{margin:0;opacity:.85;max-width:38rem}
+.also > *{position:relative;z-index:1}
+
+/* forces */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.pillar{border-radius:30px;padding:2.4rem;min-width:0;position:relative;overflow:hidden;transition:transform .4s var(--ease)}
+.pillar:hover{transform:translateY(-4px)}
+.pillar.social{background:color-mix(in srgb,var(--rose) 14%,var(--surface))}
+.pillar.strat{background:var(--soft)}
+.pillar .tag{font:700 .72rem var(--body);text-transform:uppercase;letter-spacing:.14em}
+.social .tag{color:var(--rose)}.strat .tag{color:var(--brand)}
+.pillar h3{font:400 clamp(1.8rem,3vw,2.3rem)/1.1 var(--display);margin:.8rem 0 .7rem}
+.pillar .intro{color:var(--muted);margin:0 0 1.3rem;font-size:1.06rem}
+.pillar ul{list-style:none;margin:0;padding:0;display:grid;gap:.95rem}
+.pillar li{position:relative;padding-left:1.7rem}
+.pillar li::before{content:"";position:absolute;left:0;top:.55rem;width:.75rem;height:.75rem;border-radius:50%;border:3px solid}
+.social li::before{border-color:var(--rose)}.strat li::before{border-color:var(--brand)}
+.pillar li b{color:var(--ink)}
+
+/* digital */
+.dig-wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:1.5rem;align-items:stretch}
+.dig{display:grid;gap:1rem}
+.dg{display:grid;grid-template-columns:auto 1fr;gap:1rem;padding:1.5rem;border-radius:22px;background:var(--surface);border:1px solid var(--line);transition:transform .35s var(--ease);min-width:0}
+.dg:hover{transform:translateX(6px)}
+.dg .di{width:3rem;height:3rem;border-radius:14px;display:grid;place-items:center;background:var(--amber);color:var(--amber-ink)}
+.dg .di svg{width:1.4rem;height:1.4rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.dg h3{font:800 1.12rem var(--body);margin:.1rem 0 .3rem}
+.dg p{margin:0;color:var(--muted);font-size:.98rem}
+.dg p strong{color:var(--ink)}
+.ba{background:var(--surface);border-radius:28px;padding:2rem;box-shadow:var(--shadow);display:grid;gap:1.2rem;min-width:0}
+.ba h3{font:400 1.6rem var(--display);margin:0}
+.ba-row{display:grid;gap:.5rem}
+.ba-row small{font:700 .7rem var(--body);text-transform:uppercase;letter-spacing:.14em}
+.ba-row.before small{color:var(--rose)}.ba-row.after small{color:#1E9E63}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}
+.chips span{font:600 .85rem var(--body);padding:.45rem .8rem;border-radius:12px}
+.before .chips span{background:color-mix(in srgb,var(--rose) 14%,var(--surface));color:var(--ink)}
+.after .chips span{background:color-mix(in srgb,#2BB673 16%,var(--surface));color:var(--ink);animation:pop 3s var(--ease) infinite}
+.after .chips span:nth-child(3){animation-delay:.2s}.after .chips span:nth-child(5){animation-delay:.4s}
+.chips i{font-style:normal;color:var(--muted)}
+@keyframes pop{0%,70%,100%{transform:none}80%{transform:translateY(-3px)}}
+.gain{display:flex;align-items:center;gap:.8rem;padding:1rem 1.2rem;border-radius:16px;background:var(--soft)}
+.gain b{font:400 2rem/1 var(--display);color:var(--brand)}
+.gain span{font-size:.95rem;color:var(--muted)}
+.toolrow{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.4rem}
+.toolrow span{font:600 .85rem var(--body);padding:.45rem .95rem;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+
+/* chiffres */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.stat{padding:1.8rem 1.4rem;border-radius:24px;background:var(--surface);border:1px solid var(--line);min-width:0}
+.stat .n{font:400 clamp(2.6rem,5vw,3.6rem)/1 var(--display);color:var(--brand);font-variant-numeric:tabular-nums}
+.stat .n sup{font:700 .9rem var(--body);color:var(--amber);margin-left:.2rem;vertical-align:super}
+.stat p{margin:.7rem 0 0;color:var(--muted);font-size:.97rem;line-height:1.45}
+
+/* story */
+.story{position:relative;max-width:26rem;margin:0 auto;aspect-ratio:9/15;max-height:78vh;border-radius:30px;overflow:hidden;background:var(--brand-2);box-shadow:var(--shadow);user-select:none;-webkit-user-select:none;touch-action:pan-y}
+.story .bars{position:absolute;top:14px;left:14px;right:14px;display:flex;gap:5px;z-index:4}
+.story .bars i{flex:1;height:3px;border-radius:3px;background:rgba(255,255,255,.35);overflow:hidden;position:relative}
+.story .bars i::after{content:"";position:absolute;inset:0;background:#fff;transform:scaleX(var(--f,0));transform-origin:left}
+.slide{position:absolute;inset:0;opacity:0;transform:scale(1.04);transition:opacity .6s var(--ease),transform .9s var(--ease)}
+.slide.on{opacity:1;transform:none}
+.scene{position:absolute;inset:0;width:100%;height:100%}
+.cap{position:absolute;left:0;right:0;bottom:0;padding:5rem 1.5rem 1.6rem;background:linear-gradient(transparent,rgba(8,20,26,.88));color:#fff}
+.cap .time{font:700 .72rem var(--body);text-transform:uppercase;letter-spacing:.14em;color:var(--amber)}
+.cap h3{font:400 1.75rem/1.1 var(--display);margin:.4rem 0}
+.cap p{margin:0;color:rgba(255,255,255,.85);font-size:1rem}
+.slide.on .cap>*{animation:capIn .7s var(--ease) both}
+.slide.on .cap h3{animation-delay:.08s}.slide.on .cap p{animation-delay:.16s}
+@keyframes capIn{from{opacity:0;transform:translateY(16px)}}
+.tap{position:absolute;top:0;bottom:0;width:40%;background:transparent;border:0;cursor:pointer;z-index:3;-webkit-tap-highlight-color:transparent}
+.tap.prev{left:0}.tap.next{right:0;width:60%}
+
+/* projets */
+.cases{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+.case{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:2rem;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s;min-width:0}
+.case:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.case.wide{grid-column:span 2}
+.case .where{font:700 .74rem var(--body);text-transform:uppercase;letter-spacing:.12em;color:var(--brand)}
+.case h3{font:400 1.7rem/1.15 var(--display);margin:.6rem 0 .8rem}
+.case p{margin:0 0 .8rem;color:var(--muted)}
+.case .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.2rem}
+.case .steps div{border-top:3px solid var(--amber);padding-top:.8rem;min-width:0}
+.case .steps b{display:block;font-weight:800;margin-bottom:.25rem}
+.case .steps span{color:var(--muted);font-size:.96rem}
+.case .tags{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1rem}
+.case .tag{font:600 .78rem var(--body);padding:.3rem .75rem;border-radius:999px;background:var(--bg);color:var(--muted)}
+.quote{margin:1.2rem 0 0;padding:1rem 1.2rem;border-radius:14px;background:color-mix(in srgb,var(--amber) 18%,var(--surface));font-style:italic}
+.visual{margin:-2rem -2rem 1.5rem;height:170px;overflow:hidden}
+.visual svg{display:block;width:100%;height:100%;transition:transform .8s var(--ease)}
+.case:hover .visual svg{transform:scale(1.06)}
+.swipe-hint{display:none;align-items:center;gap:.5rem;font:700 .8rem var(--body);color:var(--brand);text-transform:uppercase;letter-spacing:.1em}
+.swipe-hint .hand{display:inline-block;animation:nudge 1.4s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateX(8px)}}
+/* animations des illustrations */
+.star{transform-box:fill-box;transform-origin:center;animation:starpop 2.4s var(--ease) infinite}
+.d2{animation-delay:.15s!important}.d3{animation-delay:.3s!important}.d4{animation-delay:.45s!important}.d5{animation-delay:.6s!important}
+@keyframes starpop{0%,100%{transform:scale(1)}15%{transform:scale(1.25) rotate(8deg)}30%{transform:scale(1)}}
+.grow,.col{transform-box:fill-box;transform-origin:bottom;animation:grow 3s var(--ease) infinite alternate}
+@keyframes grow{from{transform:scaleY(.4)}}
+.roll{animation:roll 2.6s ease-in-out infinite alternate}
+@keyframes roll{from{transform:translateX(-60px)}to{transform:translateX(60px)}}
+.road{animation:road 1s linear infinite}
+@keyframes road{to{stroke-dashoffset:-44}}
+.wave{animation:wave 4s linear infinite}
+@keyframes wave{to{transform:translateX(-100px)}}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pls 2s ease-in-out infinite}
+@keyframes pls{50%{transform:scale(1.15);opacity:.75}}
+.win{animation:win 3s steps(1) infinite}
+@keyframes win{40%{opacity:.25}}
+.flicker{transform-box:fill-box;transform-origin:bottom;animation:flk .9s ease-in-out infinite alternate}
+@keyframes flk{to{transform:scaleY(1.08) skewX(3deg)}}
+.drift{animation:drift 5s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translateY(-10px)}}
+.swing{transform-box:fill-box;transform-origin:top center;animation:swing 3s ease-in-out infinite alternate}
+@keyframes swing{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
+.write{stroke-dasharray:110;stroke-dashoffset:110;animation:write 4s var(--ease) infinite}
+@keyframes write{30%,100%{stroke-dashoffset:0}}
+
+/* parcours */
+.tl{position:relative;list-style:none;margin:0;padding:0 0 0 2.4rem}
+.tl::before{content:"";position:absolute;left:.6rem;top:.5rem;bottom:.5rem;width:2px;background:linear-gradient(var(--brand),var(--amber))}
+.tl li{position:relative;padding-bottom:2.2rem}
+.tl li::before{content:"";position:absolute;left:-2.25rem;top:.4rem;width:1.1rem;height:1.1rem;border-radius:50%;background:var(--bg);border:3px solid var(--brand)}
+.tl li.now::before{background:var(--amber);border-color:var(--amber);box-shadow:0 0 0 6px color-mix(in srgb,var(--amber) 25%,transparent)}
+.tl .when{font:700 .82rem var(--body);color:var(--muted);font-variant-numeric:tabular-nums}
+.tl .pill{display:inline-block;margin-left:.5rem;padding:.08rem .6rem;border-radius:999px;background:var(--soft);color:var(--brand);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em}
+.tl h3{font:400 1.45rem/1.25 var(--display);margin:.25rem 0 .3rem}
+.tl h3 .org{color:var(--brand);font-style:italic}
+.tl p{margin:0;color:var(--muted);max-width:44rem}
+
+/* cap */
+.target{border-radius:32px;padding:clamp(2rem,5vw,3.5rem);display:grid;grid-template-columns:1.3fr 1fr;gap:2.5rem;align-items:center;background:var(--bg-2)}
+.target p{color:var(--muted);margin:1rem 0 0;font-size:1.08rem}
+.path{list-style:none;margin:0;padding:0;display:grid;gap:.8rem}
+.path li{display:grid;gap:.1rem;padding:1.1rem 1.3rem;border-radius:18px;background:var(--surface);border:1px solid var(--line)}
+.path li span{font:700 .7rem var(--body);text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+.path li b{font:400 1.3rem var(--display)}
+.path li:last-child{background:var(--brand-2);color:#fff;border-color:var(--brand-2)}
+.path li:last-child span{color:var(--amber)}
+
+/* plus */
+.more{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.tile{border-radius:24px;padding:1.8rem;background:var(--surface);border:1px solid var(--line);transition:transform .4s var(--ease),box-shadow .4s;min-width:0}
+.tile:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.tile .di{width:2.8rem;height:2.8rem;border-radius:14px;display:grid;place-items:center;background:var(--soft);color:var(--brand);margin-bottom:1rem}
+.tile .di svg{width:1.35rem;height:1.35rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.tile h3{font:400 1.45rem var(--display);margin:0 0 .4rem}
+.tile p{margin:0;color:var(--muted)}
+
+/* contact */
+.contact{margin-block:6.5rem 2rem;position:relative;overflow:hidden;isolation:isolate;border-radius:34px;padding:clamp(2rem,6vw,4.5rem);background:linear-gradient(130deg,var(--brand-2),#13788A 70%);color:#fff}
+.contact::after{content:"";position:absolute;width:26rem;height:26rem;right:-8rem;bottom:-10rem;border-radius:50%;background:var(--amber);opacity:.3;filter:blur(50px);z-index:-1;animation:float 12s ease-in-out infinite alternate}
+.contact .eyebrow{color:var(--amber)}
+.contact h2{color:#fff;font-size:clamp(2.3rem,6vw,4rem);margin-top:.6rem}
+.contact p{opacity:.85;max-width:36rem;margin:1rem 0 2rem;font-size:1.12rem}
+.c-list{display:grid;gap:.7rem;max-width:42rem}
+.c-row{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;padding:1rem 1.2rem;border-radius:16px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15)}
+.c-row .lbl{font:700 .72rem var(--body);text-transform:uppercase;letter-spacing:.12em;opacity:.7;min-width:6rem}
+.c-row .val{font:700 1.05rem var(--body);overflow-wrap:anywhere;flex:1;min-width:0;color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.35);text-underline-offset:4px}
+.c-row .val:hover{text-decoration-color:var(--amber)}
+.copy{font:700 .78rem var(--body);padding:.45rem .9rem;border-radius:999px;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;cursor:pointer}
+.copy:hover{background:var(--amber);color:var(--amber-ink);border-color:var(--amber)}
+footer{padding-block:1rem 3rem;font-size:.85rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+
+/* bouton flottant */
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:45;display:inline-flex;align-items:center;gap:.55rem;padding:.85rem 1.25rem;border-radius:999px;background:var(--amber);color:var(--amber-ink);font:800 .92rem var(--body);text-decoration:none;box-shadow:0 14px 34px -10px rgba(0,0,0,.4);animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-4px)}}
+
+/* tactile */
+.case,.tile,.pillar,.btn,.stat,.dom,.dg,.mission{-webkit-tap-highlight-color:transparent}
+.case:active,.tile:active,.pillar:active,.stat:active,.dom:active,.dg:active{transform:scale(.98)}
+
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;padding-block:3rem 3.5rem;gap:2.5rem}
+  .duo,.missions,.dig-wrap,.target,.more,.domains{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .admin{grid-template-columns:1fr 1fr}
+  .legs{grid-template-columns:1fr}
+  .steps6{grid-template-columns:repeat(2,1fr)}
+  .case.wide{grid-column:auto}
+  .case .steps{grid-template-columns:1fr}
+  .cases{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:1rem;margin-inline:-20px;padding:0 20px 1.2rem;scrollbar-width:none;overscroll-behavior-x:contain}
+  .cases::-webkit-scrollbar{display:none}
+  .cases .case{flex:0 0 86%;scroll-snap-align:center}
+  .swipe-hint{display:flex}
+  section{padding-block:4.5rem 0}
+  .journey{padding:1.4rem}
+}
+@media (max-width:480px){
+  nav .links{display:none}
+  .pass-route strong{font-size:1.6rem}
+  .plane-line{width:3.5rem}
+  .admin{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<a class="fab" href="#contact"><span class="dot"></span>Stage dès le 23 nov. · me contacter</a>
+
+<nav class="gut">
+  <div class="wrap">
+    <a class="logo" href="#top">Victor<b>.</b></a>
+    <div class="links"><a href="#stage">Mon stage</a><a href="#forces">Mes forces</a><a href="#digital">Process &amp; digital</a><a href="#projets">Réalisations</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a></div>
+  </div>
+</nav>
+
+<header class="hero gut" id="top">
+  <div class="sky" aria-hidden="true">
+    <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+      <g fill="var(--surface)" opacity=".7">
+        <g class="cloud"><ellipse cx="0" cy="110" rx="90" ry="22"/><ellipse cx="40" cy="96" rx="50" ry="24"/></g>
+        <g class="cloud c2"><ellipse cx="0" cy="430" rx="110" ry="24"/><ellipse cx="-40" cy="414" rx="56" ry="26"/></g>
+      </g>
+      <path id="route" d="M-50 520 C 250 420, 420 560, 640 360 S 1000 120, 1260 80" fill="none" stroke="var(--brand)" stroke-opacity=".25" stroke-width="2" stroke-dasharray="4 10"/>
+      <g fill="var(--brand)">
+        <path d="M0 -7 L18 0 L0 7 L4 0 Z M-4 -14 L6 0 L-4 14 L-1 0 Z" transform="scale(1.2)">
+        </path>
+        <animateMotion dur="14s" repeatCount="indefinite" rotate="auto"><mpath href="#route"/></animateMotion>
+      </g>
+    </svg>
+  </div>
+  <div class="wrap">
+    <div style="min-width:0">
+      <span class="status"><span class="dot"></span>Recherche stage de fin d'études · nov. 2026 → févr. 2027</span>
+      <h1>
+        <span class="line"><span>Victor</span></span>
+        <span class="line"><span><em>Lefebvre Brito</em></span></span>
+        <span class="line"><span>De Oliveira</span></span>
+      </h1>
+      <div class="role">Un profil <span class="typed" id="typed">qui pilote des projets</span><span class="caret"></span></div>
+      <p class="lede">Étudiant en dernière année de BTS Gestion de la PME à Angers, 20 ans. Je cherche un <strong>stage de 7 semaines</strong> pour mener un <strong>projet en gestion des risques ou démarche qualité</strong> dans votre entreprise. J'apporte mon expérience terrain, mon sens de l'<strong>accompagnement</strong> et une vraie aisance pour <strong>simplifier les process</strong>.</p>
+      <div class="cta">
+        <a class="btn primary" href="#stage">Découvrir mon projet de stage <span class="arr">→</span></a>
+        <a class="btn ghost" href="mailto:victorlefebvre49@gmail.com?subject=Proposition%20de%20stage%20ou%20d'opportunit%C3%A9">✉ M'écrire</a>
+        <a class="btn ghost" href="tel:+33672221264">☎ M'appeler</a>
+      </div>
+    </div>
+
+    <aside class="pass" id="pass" aria-label="Résumé du stage recherché">
+      <div class="pass-top"><b>Carte de stage</b><span>BTS GPME · promo 2027</span></div>
+      <div class="pass-route">
+        <div class="city"><small>Départ</small><strong>23 NOV</strong><span>2026 · Période 1</span></div>
+        <div class="plane-line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" transform="rotate(90 12 12)"/></svg></div>
+        <div class="city"><small>Arrivée</small><strong>05 FÉV</strong><span>2027 · Période 2</span></div>
+      </div>
+      <div class="pass-grid">
+        <div><small>Passager</small><b>Victor Lefebvre Brito De Oliveira</b></div>
+        <div><small>Destination</small><b class="hl">Votre entreprise</b></div>
+        <div><small>Mission</small><b>Projet risques ou qualité</b></div>
+        <div><small>Durée</small><b>2 + 5 semaines</b></div>
+        <div><small>Mobilité</small><b>France, DOM-TOM, international</b></div>
+        <div><small>Aussi ouvert à</small><b>Job · alternance · VIE</b></div>
+      </div>
+      <div class="pass-stub"><div class="barcode" aria-hidden="true"></div><span class="gate">Embarquement immédiat</span></div>
+    </aside>
+  </div>
+</header>
+
+<div class="band" aria-hidden="true">
+  <div class="track">
+    <span>Gestion des risques</span><span>Démarche qualité</span><span>Accompagnement</span><span>Stratégie</span><span>Optimisation des process</span><span>Relation client</span><span>Mobilité internationale</span><span>Esprit d'équipe</span>
+    <span>Gestion des risques</span><span>Démarche qualité</span><span>Accompagnement</span><span>Stratégie</span><span>Optimisation des process</span><span>Relation client</span><span>Mobilité internationale</span><span>Esprit d'équipe</span>
+  </div>
+</div>
+
+<main class="gut">
+<div class="wrap">
+
+  <section id="stage">
+    <div class="head reveal">
+      <span class="eyebrow">Ma recherche prioritaire</span>
+      <h2>Un stage de 7 semaines, <em>un vrai projet</em> pour votre entreprise</h2>
+      <p>Dans le cadre de mon BTS GPME, je mène une mission en mode projet sur un besoin réel de votre entreprise. Vous gagnez un appui concret, je gagne en expérience.</p>
+    </div>
+
+    <div class="journey reveal">
+      <svg class="journey-svg" viewBox="0 0 800 90" aria-hidden="true">
+        <path class="trail" d="M30 60 C 180 10, 300 10, 400 45 S 640 85, 770 30" fill="none" stroke="var(--brand)" stroke-width="2.5"/>
+        <circle cx="30" cy="60" r="9" fill="var(--brand)"/><circle cx="30" cy="60" r="16" fill="var(--brand)" opacity=".18" class="pulse"/>
+        <circle cx="400" cy="45" r="7" fill="var(--surface)" stroke="var(--muted)" stroke-width="2.5"/>
+        <circle cx="770" cy="30" r="9" fill="var(--amber)"/><circle cx="770" cy="30" r="16" fill="var(--amber)" opacity=".25" class="pulse"/>
+        <text x="30" y="88" text-anchor="start" font-family="Manrope, sans-serif" font-size="13" font-weight="700" fill="var(--muted)">23 nov.</text>
+        <text x="400" y="78" text-anchor="middle" font-family="Manrope, sans-serif" font-size="12" font-weight="600" fill="var(--muted)">retour en cours</text>
+        <text x="770" y="62" text-anchor="end" font-family="Manrope, sans-serif" font-size="13" font-weight="700" fill="var(--muted)">5 févr.</text>
+      </svg>
+      <div class="legs">
+        <div class="leg l1"><small>Période 1 · 2 semaines</small><b>23 nov. → 4 déc. 2026</b><p>Je découvre l'entreprise, je réalise un diagnostic des risques et de la qualité, et je rédige la note de cadrage du projet.</p></div>
+        <div class="leg l2"><small>Période 2 · 5 semaines</small><b>4 janv. → 5 févr. 2027</b><p>Je réalise le projet, je mets en place les actions avec vos équipes et j'en mesure les effets.</p></div>
+      </div>
+    </div>
+
+    <div class="missions">
+      <article class="mission reveal">
+        <span class="eyebrow">Mission 1</span>
+        <h3>Participer à votre activité</h3>
+        <p>Je prends en charge des tâches de gestion au quotidien&nbsp;: administratif, suivi des ventes et des fournisseurs, tableaux de bord, relation client. Je m'intègre vite et je comprends les codes de l'entreprise.</p>
+      </article>
+      <article class="mission reveal">
+        <span class="eyebrow">Mission 2</span>
+        <h3>Mener un projet pour vous</h3>
+        <p>À partir d'un besoin de votre entreprise, je conduis une démarche complète&nbsp;:</p>
+        <div class="steps6"><span>Trouver le besoin</span><span>Fixer les objectifs</span><span>Chercher les solutions</span><span>Planifier</span><span>Réaliser</span><span>Évaluer</span></div>
+      </article>
+    </div>
+
+    <h3 class="sub-h reveal">Exemples de projets que je peux mener chez vous</h3>
+    <div class="domains">
+      <div class="dom reveal"><span class="di"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></span><b>Sécurité au travail</b><span>Mise à jour du DUER, affichage, étude des EPI</span></div>
+      <div class="dom reveal"><span class="di"><svg viewBox="0 0 24 24"><path d="M5 21c0-9 6-15 15-16-1 9-7 15-15 16z"/><path d="M5 21l8-8"/></svg></span><b>Environnement &amp; RSE</b><span>Économies d'énergie, gestion des déchets, démarche RSE</span></div>
+      <div class="dom reveal"><span class="di"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><b>Risques financiers</b><span>Suivi de trésorerie, procédure de relance, solvabilité clients</span></div>
+      <div class="dom reveal"><span class="di"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span><b>Protection des données</b><span>RGPD, contrats d'assurance, prévoyance</span></div>
+      <div class="dom reveal"><span class="di"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span><b>Risques informatiques</b><span>Comparatif de prestataires, charte, sensibilisation des équipes</span></div>
+      <div class="dom hot reveal"><span class="di"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7-6.5-4.5L5.5 20l2-7L2 9h7z"/></svg></span><b>Qualité &amp; process</b><span>Satisfaction client, réclamations, indicateurs, procédures simplifiées</span></div>
+    </div>
+
+    <div class="admin reveal">
+      <div><span class="eyebrow">Convention</span><p>Convention de stage et annexe pédagogique signées avec le Lycée Chevrollier</p></div>
+      <div><span class="eyebrow">Statut</span><p>Statut étudiant, sous l'autorité d'un tuteur dans l'entreprise</p></div>
+      <div><span class="eyebrow">Gratification</span><p>Stage non rémunéré, sans coût pour l'entreprise</p></div>
+      <div><span class="eyebrow">Suivi</span><p>Visite et échange avec le tuteur par mes professeurs, évaluation en fin de stage</p></div>
+    </div>
+
+    <div class="also reveal">
+      <div style="min-width:0"><span class="eyebrow">Et aussi</span><h3>Ouvert aux opportunités professionnelles</h3><p>Job étudiant, CDD, alternance après le BTS, VIE ou mission à l'international&nbsp;: je suis mobile en France, dans les DOM-TOM et à l'étranger.</p></div>
+      <a class="btn amber" href="#contact">Me proposer une opportunité <span class="arr">→</span></a>
+    </div>
+  </section>
+
+  <section id="forces">
+    <div class="head reveal">
+      <span class="eyebrow">Mes forces</span>
+      <h2>Proche des gens, <em>stratège</em> dans l'action</h2>
+      <p>Une entreprise avance quand chacun trouve sa place et que le cap est clair. Je sais faire les deux&nbsp;: accompagner les personnes et construire une stratégie.</p>
+    </div>
+    <div class="duo">
+      <article class="pillar social reveal">
+        <span class="tag">Accompagnement &amp; talents</span>
+        <h3>Révéler le potentiel de chacun</h3>
+        <p class="intro">Je crée du lien, j'écoute et je mets en lumière ce que chacun fait de bien.</p>
+        <ul>
+          <li><b>Élu au comité protection de l'enfance</b> du Conseil départemental de Maine-et-Loire.</li>
+          <li><b>Étudiant référent au Crous</b>&nbsp;: interface entre les étudiants et l'institution.</li>
+          <li><b>Intégration réussie chez Burger King</b>&nbsp;: formé à chaque poste pour comprendre le travail de tous.</li>
+          <li><b>Coordination de l'équipe en salle</b> pendant les services.</li>
+        </ul>
+      </article>
+      <article class="pillar strat reveal">
+        <span class="tag">Stratégie &amp; pilotage</span>
+        <h3>Analyser, décider, piloter</h3>
+        <p class="intro">J'observe, j'analyse, puis je construis un plan d'action que je porte auprès de la direction.</p>
+        <ul>
+          <li><b>Diagnostic terrain</b>&nbsp;: un carnet d'observations après chaque rush.</li>
+          <li><b>Plan d'action en 3 axes</b>&nbsp;: hygiène, effectifs, satisfaction client.</li>
+          <li><b>Pilotage par indicateurs</b>&nbsp;: avis en ligne face à l'objectif réseau de 4,3/5.</li>
+          <li><b>Suivi financier</b>&nbsp;: portefeuille fournisseurs annuel de 23&nbsp;000&nbsp;€, contrôle de caisse.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="digital">
+    <div class="head reveal">
+      <span class="eyebrow">Mon atout en plus</span>
+      <h2>Faire gagner du temps <em>aux équipes</em></h2>
+      <p>Dans chaque poste, je cherche ce qui peut être simplifié. J'utilise aussi les outils numériques d'aujourd'hui pour automatiser les tâches répétitives.</p>
+    </div>
+    <div class="dig-wrap">
+      <div class="dig">
+        <article class="dg reveal"><span class="di"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h6"/><path d="M17 15l3 3-3 3"/></svg></span><div><h3>Optimisation des process</h3><p>Je repère les étapes inutiles et les doubles saisies, puis je propose une procédure plus simple. Je l'ai fait au Département de Maine-et-Loire.</p></div></article>
+        <article class="dg reveal"><span class="di"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="7" rx="2"/><rect x="14" y="13" width="7" height="7" rx="2"/><path d="M10 7.5h3a2 2 0 0 1 2 2V13"/></svg></span><div><h3>Connexion des outils (API)</h3><p>Je relie des outils entre eux pour que les informations circulent seules&nbsp;: formulaires, tableurs, messagerie, logiciel de gestion.</p></div></article>
+        <article class="dg reveal"><span class="di"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></span><div><h3>Création d'outils avec l'IA</h3><p>Grâce au vibe coding, je conçois rapidement de petits outils sur mesure. <strong>Ce site en est un exemple.</strong></p></div></article>
+      </div>
+      <div class="ba reveal">
+        <h3>Exemple&nbsp;: la relance des factures</h3>
+        <div class="ba-row before"><small>Avant</small><div class="chips"><span>Exporter la liste</span><i>→</i><span>Chercher les retards</span><i>→</i><span>Écrire chaque mail</span><i>→</i><span>Noter dans un tableau</span></div></div>
+        <div class="ba-row after"><small>Après</small><div class="chips"><span>Retards détectés</span><i>→</i><span>Relance envoyée</span><i>→</i><span>Suivi mis à jour</span></div></div>
+        <div class="gain"><b>−70&nbsp;%</b><span>de temps estimé sur une tâche répétitive, à consacrer aux clients</span></div>
+      </div>
+    </div>
+    <div class="toolrow reveal">
+      <span>Excel · tableaux de bord</span><span>Odoo</span><span>EBP</span><span>Open ERP</span><span>Google Drive</span><span>Automatisation</span><span>IA générative</span>
+    </div>
+  </section>
+
+  <section id="chiffres">
+    <div class="head reveal">
+      <span class="eyebrow">En bref</span>
+      <h2>Un parcours déjà <em>bien rempli</em></h2>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><div class="n"><span data-count="23">23</span><sup>k€</sup></div><p>de portefeuille fournisseurs annuel suivi</p></div>
+      <div class="stat reveal"><div class="n"><span data-count="9">9</span></div><p>expériences et stages&nbsp;: public, commerce, restauration, marketing</p></div>
+      <div class="stat reveal"><div class="n"><span data-count="3">3</span><sup>langues</sup></div><p>portugais (langue maternelle), anglais B1+, espagnol B1+</p></div>
+      <div class="stat reveal"><div class="n"><span data-count="5">5</span><sup>ans</sup></div><p>d'engagement comme réserviste de l'Armée de l'Air et de l'Espace</p></div>
+    </div>
+  </section>
+
+  <section id="semaine">
+    <div class="head reveal">
+      <span class="eyebrow">En images</span>
+      <h2>Une semaine <em>dans ma vie</em></h2>
+      <p>Touchez à droite pour avancer, à gauche pour revenir, maintenez pour mettre en pause.</p>
+    </div>
+    <div class="story reveal" id="story" tabindex="0" aria-roledescription="carrousel" aria-label="Une semaine dans ma vie">
+      <div class="bars"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="slide s1 on">
+        <svg class="scene" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="400" height="300" fill="url(#g1)"/>
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2F5BEA"/><stop offset="1" stop-color="#0B1222"/></linearGradient></defs>
+          <g class="drift"><rect x="120" y="70" width="160" height="110" rx="10" fill="#fff" opacity=".95"/><rect x="138" y="92" width="90" height="10" rx="5" fill="#2F5BEA"/><rect x="138" y="112" width="124" height="8" rx="4" fill="#C9D4F2"/><rect x="138" y="128" width="110" height="8" rx="4" fill="#C9D4F2"/><rect x="138" y="144" width="70" height="8" rx="4" fill="#F2BE45"/><rect x="105" y="180" width="190" height="10" rx="5" fill="#fff" opacity=".6"/></g>
+        </svg>
+        <div class="cap"><span class="time">Lundi → vendredi · journée</span><h3>En cours de BTS GPME</h3><p>Au Lycée Chevrollier, j'apprends la gestion d'une PME&nbsp;: clients, fournisseurs, risques, personnel.</p></div>
+      </div>
+      <div class="slide s2">
+        <svg class="scene" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1F2937"/><stop offset="1" stop-color="#4B5563"/></linearGradient></defs>
+          <rect width="400" height="300" fill="url(#g2)"/>
+          <line x1="80" y1="80" x2="320" y2="80" stroke="#E5E7EB" stroke-width="4"/>
+          <g class="swing"><path d="M140 80 l0 16 l-26 22 l52 0 z" fill="none" stroke="#E5E7EB" stroke-width="3"/><rect x="118" y="118" width="44" height="80" rx="4" fill="#F2BE45"/></g>
+          <g class="swing d2"><path d="M220 80 l0 16 l-26 22 l52 0 z" fill="none" stroke="#E5E7EB" stroke-width="3"/><rect x="198" y="118" width="44" height="86" rx="4" fill="#fff"/></g>
+          <g class="swing d3"><path d="M290 80 l0 16 l-26 22 l52 0 z" fill="none" stroke="#E5E7EB" stroke-width="3"/><rect x="268" y="118" width="44" height="76" rx="4" fill="#86A6FF"/></g>
+        </svg>
+        <div class="cap"><span class="time">12 h par semaine</span><h3>Conseiller de vente chez Zara</h3><p>Au rayon homme, je conseille les clients et je mets en valeur les collections.</p></div>
+      </div>
+      <div class="slide s3">
+        <svg class="scene" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E8622C"/><stop offset="1" stop-color="#8A1F11"/></linearGradient></defs>
+          <rect width="400" height="300" fill="url(#g3)"/>
+          <g class="pulse"><circle cx="200" cy="140" r="70" fill="#FFD27A" opacity=".25"/><circle cx="200" cy="140" r="46" fill="#FFD27A" opacity=".45"/></g>
+          <g fill="#fff"><path class="star" d="M110 230 l7 14 15 2 -11 10 3 15 -14-7 -14 7 3-15 -11-10 15-2z"/><path class="star d2" d="M155 230 l7 14 15 2 -11 10 3 15 -14-7 -14 7 3-15 -11-10 15-2z"/><path class="star d3" d="M200 230 l7 14 15 2 -11 10 3 15 -14-7 -14 7 3-15 -11-10 15-2z"/><path class="star d4" d="M245 230 l7 14 15 2 -11 10 3 15 -14-7 -14 7 3-15 -11-10 15-2z"/><path class="star d5" d="M290 230 l7 14 15 2 -11 10 3 15 -14-7 -14 7 3-15 -11-10 15-2z"/></g>
+          <text x="200" y="152" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="40" fill="#fff">RUSH</text>
+        </svg>
+        <div class="cap"><span class="time">Le soir · service</span><h3>Leader expérience client chez Burger King</h3><p>Pendant le rush, je veille à ce que chaque client soit bien accueilli et reparte satisfait.</p></div>
+      </div>
+      <div class="slide s4">
+        <svg class="scene" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2BE45"/><stop offset="1" stop-color="#C98A12"/></linearGradient></defs>
+          <rect width="400" height="300" fill="url(#g4)"/>
+          <g class="drift"><rect x="125" y="55" width="150" height="190" rx="8" fill="#FFFDF5"/><rect x="125" y="55" width="16" height="190" fill="#101A30" opacity=".85"/>
+          <g stroke="#101A30" stroke-width="3" stroke-linecap="round"><line class="write" x1="155" y1="95" x2="255" y2="95"/><line class="write d2" x1="155" y1="120" x2="240" y2="120"/><line class="write d3" x1="155" y1="145" x2="250" y2="145"/><line class="write d4" x1="155" y1="170" x2="225" y2="170"/></g></g>
+        </svg>
+        <div class="cap"><span class="time">Après le rush</span><h3>Mon carnet d'amélioration</h3><p>Je note ce qui a bloqué et ce que j'ai tenté. Ces notes deviennent ensuite des plans d'action.</p></div>
+      </div>
+      <div class="slide s5">
+        <svg class="scene" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7C3AED"/><stop offset="1" stop-color="#1E1B4B"/></linearGradient></defs>
+          <rect width="400" height="300" fill="url(#g5)"/>
+          <g fill="#fff"><path d="M120 120 L200 75 L280 120 Z" opacity=".95"/><rect x="130" y="125" width="140" height="10" opacity=".95"/><rect x="140" y="140" width="14" height="70" class="col"/><rect x="172" y="140" width="14" height="70" class="col d2"/><rect x="214" y="140" width="14" height="70" class="col d3"/><rect x="246" y="140" width="14" height="70" class="col d4"/><rect x="120" y="212" width="160" height="12"/></g>
+          <g class="pulse"><circle cx="200" cy="100" r="8" fill="#F2BE45"/></g>
+        </svg>
+        <div class="cap"><span class="time">Engagement</span><h3>Élu au Conseil départemental</h3><p>Au comité protection de l'enfance, je participe aux décisions pour les jeunes de Maine-et-Loire.</p></div>
+      </div>
+      <button class="tap prev" type="button" aria-label="Précédent"></button>
+      <button class="tap next" type="button" aria-label="Suivant"></button>
+    </div>
+  </section>
+
+
+  <section id="projets">
+    <div class="head reveal">
+      <span class="eyebrow">Réalisations concrètes</span>
+      <h2>Ce que j'ai <em>vraiment fait</em> sur le terrain</h2>
+      <p>Quelques situations réelles qui montrent ma façon de travailler.</p>
+      <span class="swipe-hint">Faites glisser <span class="hand">→</span></span>
+    </div>
+    <div class="cases">
+      <article class="case wide reveal">
+        <div class="visual" aria-hidden="true"><svg viewBox="0 0 800 200" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="v1" x1="0" x2="1"><stop offset="0" stop-color="#E8622C"/><stop offset="1" stop-color="#F2BE45"/></linearGradient></defs><rect width="800" height="200" fill="url(#v1)"/><g fill="#fff" opacity=".9"><rect class="grow" x="470" y="120" width="40" height="60" rx="6"/><rect class="grow d2" x="530" y="95" width="40" height="85" rx="6"/><rect class="grow d3" x="590" y="70" width="40" height="110" rx="6"/><rect class="grow d4" x="650" y="40" width="40" height="140" rx="6"/></g><g fill="#fff"><path class="star" d="M80 80 l9 18 20 3 -14 14 3 20 -18-9 -18 9 3-20 -14-14 20-3z"/><path class="star d2" d="M140 80 l9 18 20 3 -14 14 3 20 -18-9 -18 9 3-20 -14-14 20-3z"/><path class="star d3" d="M200 80 l9 18 20 3 -14 14 3 20 -18-9 -18 9 3-20 -14-14 20-3z"/><path class="star d4" d="M260 80 l9 18 20 3 -14 14 3 20 -18-9 -18 9 3-20 -14-14 20-3z"/><path class="star d5" d="M320 80 l9 18 20 3 -14 14 3 20 -18-9 -18 9 3-20 -14-14 20-3z"/></g></svg></div>
+        <span class="where">Burger King Angers Grand Maine · depuis sept. 2026</span>
+        <h3>Faire remonter les avis clients d'un restaurant</h3>
+        <p>Recruté pour piloter l'expérience client, j'ai commencé par un mois d'observation. Après chaque rush, je note dans un carnet ce qui a bloqué et ce que j'ai tenté. À partir de ces notes, j'ai rédigé un plan d'action pour me rapprocher de l'objectif de note Google fixé par l'enseigne.</p>
+        <div class="steps">
+          <div><b>Hygiène</b><span>Remettre la propreté de la salle au centre de chaque service.</span></div>
+          <div><b>Équipe</b><span>Un binôme accueil + salle par service, pour qu'aucun client ne soit oublié.</span></div>
+          <div><b>Avis &amp; animations</b><span>QR codes d'avis sur les tables (environ 0,30&nbsp;€ l'unité) et un atelier familles le mercredi.</span></div>
+        </div>
+        <div class="tags"><span class="tag">Diagnostic</span><span class="tag">Rapport Word</span><span class="tag">Chiffrage</span><span class="tag">Travail avec le directeur</span></div>
+      </article>
+
+      <article class="case reveal">
+        <div class="visual" aria-hidden="true"><svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="v2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2F5BEA"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><rect width="400" height="200" fill="url(#v2)"/><g class="roll"><rect x="165" y="50" width="70" height="100" rx="12" fill="#F2BE45"/><path d="M185 50 v-16 h30 v16" fill="none" stroke="#fff" stroke-width="6"/><line x1="185" y1="70" x2="185" y2="135" stroke="#C98A12" stroke-width="4"/><line x1="215" y1="70" x2="215" y2="135" stroke="#C98A12" stroke-width="4"/><circle cx="180" cy="158" r="7" fill="#101A30"/><circle cx="220" cy="158" r="7" fill="#101A30"/></g><line x1="0" y1="166" x2="400" y2="166" stroke="#fff" stroke-opacity=".3" stroke-width="2" stroke-dasharray="12 10" class="road"/></svg></div>
+        <span class="where">B&amp;M Angers Atoll · stage mai → juin 2026</span>
+        <h3>Vendre une valise, de l'accueil à l'encaissement</h3>
+        <p>Au rayon bagagerie, j'ai analysé ma démarche de vente&nbsp;: découverte du besoin (durée du voyage, transport, budget), argumentation, puis conclusion. J'en ai fait une fiche d'analyse pour mon épreuve de BTS.</p>
+        <div class="tags"><span class="tag">Vente conseil</span><span class="tag">Fiche GRCF</span></div>
+      </article>
+
+      <article class="case reveal">
+        <div class="visual" aria-hidden="true"><svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="v3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#0E7490"/></linearGradient></defs><rect width="400" height="200" fill="url(#v3)"/><path class="wave" d="M0 120 q50 -18 100 0 t100 0 t100 0 t100 0 t100 0 v80 h-500 z" fill="#fff" opacity=".25"/><path class="wave d2" d="M0 140 q50 -14 100 0 t100 0 t100 0 t100 0 t100 0 v60 h-500 z" fill="#fff" opacity=".35"/><g font-family="IBM Plex Mono, monospace" font-size="13" fill="#fff" text-anchor="middle"><circle cx="90" cy="60" r="16" fill="#fff"/><path d="M83 60 l5 5 9-10" stroke="#0E7490" stroke-width="3" fill="none"/><text x="90" y="95">DEVIS</text><line x1="110" y1="60" x2="180" y2="60" stroke="#fff" stroke-width="2"/><circle cx="200" cy="60" r="16" fill="#fff"/><path d="M193 60 l5 5 9-10" stroke="#0E7490" stroke-width="3" fill="none"/><text x="200" y="95">COMMANDE</text><line x1="220" y1="60" x2="290" y2="60" stroke="#fff" stroke-width="2"/><circle cx="310" cy="60" r="16" fill="#F2BE45" class="pulse"/><text x="310" y="95">LIVRAISON</text></g></svg></div>
+        <span class="where">B&amp;M Angers Atoll · stage</span>
+        <h3>Suivre une commande de piscine jusqu'à la livraison</h3>
+        <p>J'ai suivi le cycle complet&nbsp;: devis, commande, relance et livraison chez le client. Un travail de rigueur où chaque étape oubliée se paie en mécontentement.</p>
+        <p class="quote">Stage conclu par une lettre de recommandation.</p>
+      </article>
+
+      <article class="case reveal">
+        <div class="visual" aria-hidden="true"><svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="v4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1E1B4B"/><stop offset="1" stop-color="#4338CA"/></linearGradient></defs><rect width="400" height="200" fill="url(#v4)"/><circle cx="330" cy="45" r="18" fill="#FFE9A8"/><rect x="120" y="40" width="160" height="160" fill="#0B1222"/><g fill="#F2BE45"><rect class="win" x="140" y="60" width="22" height="18"/><rect class="win d2" x="189" y="60" width="22" height="18"/><rect class="win d3" x="238" y="60" width="22" height="18"/><rect class="win d4" x="140" y="96" width="22" height="18"/><rect class="win" x="189" y="96" width="22" height="18"/><rect class="win d2" x="238" y="96" width="22" height="18"/><rect class="win d3" x="140" y="132" width="22" height="18"/><rect class="win d5" x="238" y="132" width="22" height="18"/></g><rect x="186" y="160" width="28" height="40" fill="#F2BE45" opacity=".9"/></svg></div>
+        <span class="where">Crous d'Angers Belle-Beille · 2025 → 2026</span>
+        <h3>Être le relais des étudiants en résidence</h3>
+        <p>Comme étudiant référent, j'accueillais les résidents, je faisais remonter leurs demandes et je transmettais les informations de l'équipe. J'y ai appris la discrétion et le sens du service public.</p>
+        <div class="tags"><span class="tag">Accueil</span><span class="tag">Médiation</span></div>
+      </article>
+
+      <article class="case reveal">
+        <div class="visual" aria-hidden="true"><svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="v5" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C2410C"/><stop offset=".5" stop-color="#F59E0B"/><stop offset=".5" stop-color="#0EA5E9"/><stop offset="1" stop-color="#075985"/></linearGradient></defs><rect width="400" height="200" fill="url(#v5)"/><g class="flicker"><path d="M100 160 c-30-30 0-60 10-90 c10 30 40 40 20 90 z" fill="#FFE08A"/><path d="M108 160 c-14-16 0-34 6-50 c8 18 20 26 8 50 z" fill="#fff"/></g><path class="wave" d="M200 130 q25 -15 50 0 t50 0 t50 0 t50 0 t50 0 v70 h-250 z" fill="#fff" opacity=".35"/><path class="wave d2" d="M200 150 q25 -12 50 0 t50 0 t50 0 t50 0 t50 0 v50 h-250 z" fill="#fff" opacity=".5"/></svg></div>
+        <span class="where">Braise et Océan · été 2026</span>
+        <h3>Assistant de gestion dans un restaurant</h3>
+        <p>Pendant deux mois, j'ai été le soutien polyvalent du restaurant&nbsp;: organisation, tâches administratives et coup de main en service quand il le fallait.</p>
+        <div class="tags"><span class="tag">Polyvalence</span><span class="tag">Gestion courante</span></div>
+      </article>
+    </div>
+  </section>
+
+
+  <section id="parcours">
+    <div class="head reveal">
+      <span class="eyebrow">Parcours</span>
+      <h2>Du plus récent <em>au premier pas</em></h2>
+    </div>
+    <ol class="tl">
+      <li class="now reveal"><div class="when">depuis sept. 2026<span class="pill">CDI</span></div><h3>Leader expérience &amp; service client · <span class="org">Burger King Angers Grand Maine</span></h3><p>Pilotage de l'expérience client et des avis en ligne (objectif réseau 4,3/5), plan d'action, coordination de l'équipe en salle.</p></li>
+      <li class="now reveal"><div class="when">depuis déc. 2025<span class="pill">Temps partiel</span></div><h3>Conseiller de vente · caisse · <span class="org">Zara (Inditex)</span></h3><p>Encaissements, décaissements et enregistrement mensuel, conseil au rayon homme, merchandising.</p></li>
+      <li class="reveal"><div class="when">juil. → août 2026<span class="pill">CDD</span></div><h3>Assistant de gestion polyvalent · <span class="org">Braise et Océan</span></h3><p>Suivi administratif, contrôle des encaissements et clôtures de caisse, stocks et commandes fournisseurs.</p></li>
+      <li class="reveal"><div class="when">mai → juin 2026<span class="pill">Stage BTS</span></div><h3>Responsable de magasin · <span class="org">B&amp;M Angers Atoll</span></h3><p>Administration des ventes et relation fournisseurs sur Odoo, cycle devis → commande → livraison. Lettre de recommandation.</p></li>
+      <li class="reveal"><div class="when">févr. 2026<span class="pill">Stage</span></div><h3>Marketing &amp; communication · <span class="org">Ti'Galik</span></h3><p>Création de contenus, actions marketing, analyse de l'engagement à partir d'indicateurs.</p></li>
+      <li class="reveal"><div class="when">sept. 2025 → juin 2026<span class="pill">CDD</span></div><h3>Étudiant référent · <span class="org">Crous d'Angers Belle-Beille</span></h3><p>Référent de proximité entre les étudiants et le Crous, coordination d'actions de vie étudiante.</p></li>
+      <li class="reveal"><div class="when">déc. 2024 → janv. 2025<span class="pill">Stage</span></div><h3>Finances, juridique &amp; RH · <span class="org">Département de Maine-et-Loire</span></h3><p>Appui aux services financiers, juridiques et RH, contribution à l'optimisation des procédures internes.</p></li>
+      <li class="reveal"><div class="when">juil. 2023 → déc. 2025</div><h3>Équipier polyvalent &amp; Mc'Ambassadeur · <span class="org">McDonald's Angers</span></h3><p>Optimisation du service, satisfaction client, respect des normes qualité.</p></li>
+      <li class="reveal"><div class="when">2025 → 2027<span class="pill">Formation</span></div><h3>BTS Gestion de la PME · <span class="org">Lycée Chevrollier</span></h3><p>Gestion des risques, gestion financière et pilotage, relations clients et fournisseurs. Avant&nbsp;: Bac AGOrA, mention Bien (2025).</p></li>
+    </ol>
+  </section>
+
+  <section id="cible">
+    <div class="target reveal">
+      <div style="min-width:0">
+        <span class="eyebrow">Mon cap</span>
+        <h2>Déjà sur le terrain, <em>cap sur la direction</em></h2>
+        <p>J'ai déjà des responsabilités, je mène des projets et je propose des améliorations à ma direction. Je veux aller plus loin&nbsp;: découvrir de nouveaux métiers, prendre plus de responsabilités et évoluer vers des fonctions de direction.</p>
+      </div>
+      <ol class="path">
+        <li><span>Aujourd'hui</span><b>Leader expérience client</b></li>
+        <li><span>Prochaine étape</span><b>Stage de fin d'études, puis BUT GEA</b></li>
+        <li><span>Mon objectif</span><b>Évoluer vers la direction</b></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="moi">
+    <div class="head reveal">
+      <span class="eyebrow">Au-delà du CV</span>
+      <h2>Engagé, curieux, <em>prêt à voyager</em></h2>
+    </div>
+    <div class="more">
+      <div class="tile reveal"><div class="di"><svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg></div><h3>Réserviste Armée de l'Air</h3><p>Engagé pour 5 ans. J'y ai appris la rigueur, la réactivité et la conduite de missions exigeantes.</p></div>
+      <div class="tile reveal"><div class="di"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div><h3>Élu départemental</h3><p>Membre du comité protection de l'enfance au Conseil départemental de Maine-et-Loire.</p></div>
+      <div class="tile reveal"><div class="di"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><h3>Mobile à l'international</h3><p>Portugais, anglais et espagnol. Prêt à partir en France, dans les DOM-TOM ou à l'étranger.</p></div>
+      <div class="tile reveal"><div class="di"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7-6.5-4.5L5.5 20l2-7L2 9h7z"/></svg></div><h3>Esprit d'entreprendre</h3><p>Participant aux Entrep', programme national d'entraînement à l'entrepreneuriat.</p></div>
+      <div class="tile reveal"><div class="di"><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><h3>Mannequinat &amp; danse</h3><p>Des représentations en France et à l'international qui m'ont rendu à l'aise face au public.</p></div>
+      <div class="tile reveal"><div class="di"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 15l4-4 3 3 5-6"/></svg></div><h3>À l'aise avec les chiffres</h3><p>Indicateurs, tableaux de bord, contrôle de caisse&nbsp;: je pilote avec des données.</p></div>
+    </div>
+  </section>
+
+  <div class="contact reveal" id="contact">
+    <span class="eyebrow">Contact</span>
+    <h2>Et si on travaillait ensemble&nbsp;?</h2>
+    <p>Vous avez un projet en gestion des risques, qualité ou organisation&nbsp;? Accueillez-moi en stage du 23 novembre 2026 au 5 février 2027. Je reste aussi ouvert à toute opportunité professionnelle. Je réponds sous 24&nbsp;h.</p>
+    <div class="c-list">
+      <div class="c-row"><span class="lbl">E-mail</span><a class="val" id="mail" href="mailto:victorlefebvre49@gmail.com?subject=Proposition%20de%20stage%20ou%20d'opportunit%C3%A9">victorlefebvre49@gmail.com</a><button class="copy" type="button" data-copy="mail">Copier</button></div>
+      <div class="c-row"><span class="lbl">Téléphone</span><a class="val" id="tel" href="tel:+33672221264">+33 6 72 22 12 64</a><button class="copy" type="button" data-copy="tel">Copier</button></div>
+      <div class="c-row"><span class="lbl">LinkedIn</span><a class="val" href="https://www.linkedin.com/in/victor-lefebvrebritodeoliveira49" target="_blank" rel="noopener">linkedin.com/in/victor-lefebvrebritodeoliveira49 ↗</a></div>
+    </div>
+  </div>
+
+  <footer><span>© 2026 Victor Lefebvre Brito De Oliveira</span><span>Angers · Maine-et-Loire</span></footer>
+</div>
+</main>
+
+<script>
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const bar=document.getElementById('progress');
+const onScroll=()=>{const h=document.documentElement;bar.style.setProperty('--p',(h.scrollTop/((h.scrollHeight-h.clientHeight)||1)).toFixed(4))};
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+(function(){
+  if(reduce)return;
+  const words=["qui pilote des projets","qui simplifie les process","proche des équipes","tourné vers la stratégie","prêt à voyager"];
+  const el=document.getElementById('typed');let w=0,i=words[0].length,del=true;
+  setTimeout(function tick(){
+    if(del){i--;if(i<=0){del=false;w=(w+1)%words.length}}
+    else{i++;if(i>=words[w].length){del=true;el.textContent=words[w];return setTimeout(tick,2200)}}
+    el.textContent=words[w].slice(0,Math.max(i,0));
+    setTimeout(tick,del?35:70);
+  },2600);
+})();
+
+(function(){
+  if(reduce||!('IntersectionObserver' in window))return;
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting)return;io.unobserve(e.target);
+    const end=+e.target.dataset.count,t0=performance.now(),d=1200;
+    const step=t=>{const k=Math.min((t-t0)/d,1);e.target.textContent=Math.round(end*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(step)};
+    e.target.textContent='0';requestAnimationFrame(step);
+  }),{threshold:.6});
+  document.querySelectorAll('[data-count]').forEach(n=>io.observe(n));
+})();
+
+(function(){
+  const card=document.getElementById('pass');if(reduce||!matchMedia('(pointer:fine)').matches)return;
+  card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(900px) rotateY(${x*8}deg) rotateX(${-y*8}deg)`});
+  card.addEventListener('pointerleave',()=>card.style.transform='');
+})();
+
+(function(){
+  const s=document.getElementById('story');if(!s)return;
+  const slides=[...s.querySelectorAll('.slide')],bars=[...s.querySelectorAll('.bars i')];
+  const DUR=5200;let i=0,t=0,last=performance.now(),paused=false,seen=false;
+  const show=k=>{i=(k+slides.length)%slides.length;t=0;slides.forEach((el,n)=>el.classList.toggle('on',n===i));bars.forEach((b,n)=>b.style.setProperty('--f',n<i?1:0))};
+  s.querySelector('.next').addEventListener('click',()=>show(i+1));
+  s.querySelector('.prev').addEventListener('click',()=>show(i-1));
+  s.addEventListener('keydown',e=>{if(e.key==='ArrowRight')show(i+1);if(e.key==='ArrowLeft')show(i-1)});
+  s.addEventListener('pointerdown',()=>paused=true);
+  ['pointerup','pointercancel','pointerleave'].forEach(ev=>s.addEventListener(ev,()=>paused=false));
+  let sx=null;s.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+  s.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50){show(dx<0?i+1:i-1);e.preventDefault()}sx=null});
+  new IntersectionObserver(e=>seen=e[0].isIntersecting,{threshold:.4}).observe(s);
+  (function loop(now){const dt=now-last;last=now;if(seen&&!paused&&!reduce){t+=dt;if(t>=DUR)show(i+1)}bars[i].style.setProperty('--f',Math.min(t/DUR,1));requestAnimationFrame(loop)})(performance.now());
+})();
+
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
+  const el=document.getElementById(b.dataset.copy);const t=el.textContent.trim();
+  const done=()=>{b.textContent='Copié ✓';setTimeout(()=>b.textContent='Copier',1500)};
+  const sel=()=>{const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r)};
+  try{navigator.clipboard.writeText(t).then(done,sel)}catch(e){sel()}
+}));
+</script>
+
+</body></html>
